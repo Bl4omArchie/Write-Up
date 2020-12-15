@@ -67,7 +67,7 @@ with open("flag.txt.enc", "rb") as fp:  #J'ouvre mon fichier en mode "rb" qui pe
 >> 5461468309655872738700035603457241238681569801180183582502634691203218427997766
 ```
 
-Pour déchiffrer le message, je vais utiliser la fonction pow() qui revient à faire c**d % N ainsi que la fonction long_to_bytes() de pycryptodome qui permet de convertir directement de décimal à ascii string (c'est à dire le texte en clair). Si vous n'arrivez pas à installer le module pycryptodome, vous pouvez le faire manuellement [ici](
+Pour déchiffrer le message, j'ai utilisé la fonction pow() qui revient à faire c**d % N ainsi que la fonction long_to_bytes() de pycryptodome qui permet de convertir directement de décimal à ascii string (c'est à dire le texte en clair). Si vous n'arrivez pas à installer le module pycryptodome, vous pouvez le faire manuellement [ici](
 https://coding.tools/) (décimal -> hexa puis hexa -> ascii string)
 ```py
 from Crypto.Util.number import long_to_bytes
