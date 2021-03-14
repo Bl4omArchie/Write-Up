@@ -1,9 +1,11 @@
+#DaVinciCTF and utCTF
+
 Welcome to those two write-up about the DaVinci CTF and the utCTF.
 I participated to the both CTF at the same time and the challenge that i flagged are pretty small so i put the wu in only one paper.
 The first one is about an RSA issue on the public exponent and the second one about a easy exponent to brute-force with Diffie-Hellmann.
 
 
-DaVinci CTF - Bootless_RSA:
+##DaVinci CTF - Bootless_RSA:
 
 So in this challenge we have a big modulus (N) but with a small public exponent (e).
 The issue is simple: if e is small whereas n is big, pow(m,e) is inferior to n. So c, which is pow(m,e,n) would probably be pow(m,e)=pow(m,3) and so m = pow(c,1/3) which is the cube root of c.
@@ -22,7 +24,7 @@ def bootless_RSA():
 >>> dvCTF{RS4_m0dul0_inf1nity}
 ```
 
-utCTF - small P problem:
+##utCTF - small P problem:
 
 This one was pretty easy at the condition to know the key exchange of Diffie-Hellmann ! If you dont know well DH, go look at this: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
